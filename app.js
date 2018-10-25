@@ -6,7 +6,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV === 'development') {
   const dotenv = require('dotenv');
   dotenv.config();
 }
@@ -57,7 +57,7 @@ app.use(morgan('dev'));
  /**
  * Error Handler.
  */
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV === 'development') {
   // only use in development
   const errorHandler = require('errorhandler');
   app.use(errorHandler());
