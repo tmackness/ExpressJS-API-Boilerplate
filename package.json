@@ -1,13 +1,13 @@
 {
   "name": "expressjs-bolierplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "A expressjs API boilerplate.",
   "main": "app.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon -w ."
   },
   "author": "Trent Mackness",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
